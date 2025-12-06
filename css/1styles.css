@@ -69,28 +69,36 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('https://blog.acheinopaofranquias.com.br/wp-content/uploads/2024/04/1690393708824-1024x586.jpeg');
-            background-size: cover;
-            background-position: center;
-            color: white;
             margin-top: 80px;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
 
         .hero-content h1 {
             font-size: 4rem;
             margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 10px 210px 10px rgba(0,0,0,0.5);
             font-weight: 400;
+            z-index: 2;
+            color: white;
         }
 
         .hero-content p {
             font-size: 1.5rem;
             margin-bottom: 40px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            text-shadow: 20px 20px 20px rgba(0,0,0,0.5);
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            color: white;
         }
 
         .btn-primary {
@@ -157,12 +165,17 @@
         .philosophy-image {
             height: 600px;
             border-radius: 20px;
-            background: linear-gradient(45deg, #d4af37, #f4e4b2);
-            background-size: cover;
-            background-position: center;
+            overflow: hidden;
+            position: center;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
+        .philosophy-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;    
+            object-position: center; 
+        }
         /* Values Section */
         .values {
             padding: 100px 0;
